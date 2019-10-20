@@ -50,7 +50,7 @@ for r in result:
     try: # not all confessions have the ID tag so we try to remove it from the ones that do
         confession = confession.replace(re.findall("#[0-9]{4}:", confession)[0],'')
     except:
-        pass 
+        pass
     scraped_text.write(confession)
     scraped_text.write("\n")
 scraped_text.close()
